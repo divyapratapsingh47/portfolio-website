@@ -19,29 +19,23 @@ header {
     padding: 50px 20px;
 }
 
+/* PROFILE IMAGE */
 .profile-pic {
-  width: 200px;
-  height: auto;            /* keeps full image */
-  border-radius: 15px;     /* smooth edges (NOT circle) */
-  margin-top: 20px;
+    width: 200px;
+    height: auto;
+    border-radius: 20px; /* soft edges */
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  border: 2px solid #00d4ff;
-  box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
-
-  transition: transform 0.3s ease;
+    border: 2px solid #00d4ff;
+    box-shadow: 0 10px 25px rgba(0, 212, 255, 0.3);
+    transition: transform 0.3s ease;
 }
 
 .profile-pic:hover {
-  transform: scale(1.05);
-}
-
-h1 {
-    font-size: 40px;
-    margin: 10px 0;
+    transform: scale(1.05);
 }
 
 /* BUTTONS */
@@ -54,31 +48,59 @@ h1 {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* SECTIONS */
 section {
-    padding: 30px;
+    padding: 40px 20px;
     max-width: 900px;
     margin: auto;
 }
 
 .card {
-    background: #1e293b;
+    background: #1b2a40;
     padding: 20px;
-    margin: 15px 0;
     border-radius: 10px;
-    transition: 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
+/* PROJECT GRID */
+.project-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* PROJECT CARD */
+.project-card {
+    background: #1b2a40;
+    padding: 20px;
+    width: 260px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CARD HOVER */
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 198, 255, 0.3);
+}
+
+/* BUTTON INSIDE CARD */
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+/* BUTTON HOVER */
+.project-card a:hover {
+    opacity: 0.9;
 }
 
 /* FOOTER */
@@ -86,37 +108,6 @@ footer {
     text-align: center;
     padding: 20px;
     background: #020617;
-    font-size: 14px;
-}
-    .project-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
-.project-card {
-  background: #1b2a40;
-  padding: 20px;
-  width: 260px;
-  border-radius: 12px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card a {
-  display: inline-block;
-  padding: 8px 15px;
-  background: linear-gradient(45deg, #00c6ff, #0072ff);
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-}
-
-.project-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 198, 255, 0.3);
 }
 </style>
 </head>
@@ -131,15 +122,15 @@ footer {
 
     <br>
 
-    <a class="btn" href="https://github.com/divyapratapsingh47" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a class="btn" href="https://www.linkedin.com/in/divyapratapsingh47/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a class="btn" href="https://github.com/divyapratapsingh47" target="_blank">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/divyapratapsingh47/" target="_blank">LinkedIn</a>
 </header>
 
 <section>
     <h2>About Me</h2>
     <div class="card">
         <p>
-            I am a passionate BCA student interested in Web Development and AI.
+            I am a passionate BCA student interested in Web Development and AI. 
             I enjoy building real-world projects and continuously learning new technologies.
         </p>
     </div>
@@ -153,29 +144,44 @@ footer {
 </section>
 
 <section>
-  <h2>Projects</h2>
+    <h2>Projects</h2>
 
-  <div class="project-container">
+    <div class="project-container">
 
-    <div class="project-card">
-      <h3>💻 Portfolio Website</h3>
-      <p>Designed and developed a responsive personal portfolio using HTML & CSS, deployed via GitHub Pages.</p>
-      <a href="https://divyapratapsingh47.github.io/portfolio-website/" target="_blank" rel="noopener noreferrer">View Project</a>
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+            <h3>💻 Portfolio Website</h3>
+            <p>
+                Designed and developed a responsive personal portfolio using HTML & CSS.
+            </p>
+            <a href="https://divyapratapsingh47.github.io/portfolio-website/" target="_blank">View Project</a>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+            <h3>🐍 Python Mini Projects</h3>
+            <p>
+                Built small Python applications demonstrating problem-solving and logic building.
+            </p>
+        </div>
+
+        <!-- PROJECT 3 (NEW 🔥) -->
+        <div class="project-card">
+            <h3>🧮 Calculator App</h3>
+            <p>
+                Created a basic calculator using HTML, CSS, and JavaScript for performing operations.
+            </p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+
     </div>
-
-    <div class="project-card">
-      <h3>🐍 Python Mini Projects</h3>
-      <p>Built small Python-based applications demonstrating problem-solving and logical thinking.</p>
-    </div>
-
-  </div>
 </section>
 
 <section>
     <h2>Contact</h2>
     <div class="card">
         <p>Email: Dps47gwalior@gmail.com</p>
-        <a class="btn" href="mailto:Dps47gwalior@gmail.com">📩 Email Me</a>
+        <a class="btn" href="mailto:dps47gwalior@gmail.com">📩 Email Me</a>
     </div>
 </section>
 
