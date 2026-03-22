@@ -5,35 +5,43 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial;
+      font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: white;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #1e293b, #020617);
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 45px;
       margin: 0;
     }
 
     h2 {
       color: #38bdf8;
+      margin-bottom: 10px;
     }
 
     section {
-      padding: 40px;
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
     .card {
       background: #1e293b;
       padding: 20px;
-      margin: 10px 0;
+      margin: 15px 0;
       border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
     }
 
     a {
@@ -43,11 +51,19 @@
 
     .btn {
       display: inline-block;
-      margin-top: 15px;
+      margin: 10px;
       padding: 10px 20px;
       background: #38bdf8;
       color: black;
       border-radius: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      font-size: 14px;
     }
   </style>
 </head>
@@ -57,38 +73,52 @@
 <header>
   <h1>Hi, I'm Divya 👋</h1>
   <p>Aspiring Software Developer | BCA Student</p>
-  <a class="btn" href="https://github.com/divyapratapsingh47">View GitHub</a>
+
+  <a class="btn" href="https://github.com/divyapratapsingh47">GitHub</a>
+  <a class="btn" href="#">LinkedIn</a>
 </header>
 
 <section>
   <h2>About Me</h2>
   <div class="card">
-    <p>I am a BCA student passionate about web development and building real-world projects. Currently learning HTML, CSS, JavaScript and exploring AI.</p>
+    <p>I am a passionate BCA student interested in web development and AI. I enjoy building projects and learning new technologies.</p>
   </div>
 </section>
 
 <section>
   <h2>Skills</h2>
   <div class="card">
-    <p>Python, HTML, CSS, JavaScript, Git & GitHub, Basic Machine Learning</p>
+    <p>Python, HTML, CSS, JavaScript, Git, GitHub, Machine Learning (basic)</p>
   </div>
 </section>
 
 <section>
   <h2>Projects</h2>
+
   <div class="card">
     <h3>Portfolio Website</h3>
-    <p>Personal portfolio built using HTML, CSS and deployed using GitHub Pages.</p>
+    <p>Built using HTML, CSS and deployed using GitHub Pages.</p>
+    <a href="https://divyapratapsingh47.github.io/portfolio-website/">View Project</a>
   </div>
+
+  <div class="card">
+    <h3>Future Project</h3>
+    <p>Add your upcoming projects here.</p>
+  </div>
+
 </section>
 
 <section>
   <h2>Contact</h2>
   <div class="card">
-    <p>📧 Email: your-email@example.com</p>
-    <p>🔗 <a href="https://linkedin.com">LinkedIn</a></p>
+    <p>📧 Email: Dps47mumbai@gmail.com</p>
+    <p>🔗 <a href="#">https://www.linkedin.com/in/divyapratapsingh47</a></p>
   </div>
 </section>
+
+<footer>
+  <p>© 2026 Divya Pratap Singh</p>
+</footer>
 
 </body>
 </html>
