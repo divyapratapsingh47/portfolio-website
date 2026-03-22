@@ -1,123 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Divya Pratap Singh</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: white;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Pratap Singh</title>
 
-    header {
-      text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #1e293b, #020617);
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f172a, #020617);
+    color: white;
+}
 
-    h1 {
-      font-size: 45px;
-      margin: 0;
-    }
+/* HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px;
+}
 
-    h2 {
-      color: #38bdf8;
-      margin-bottom: 10px;
-    }
+.profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
 
-    section {
-      padding: 50px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
 
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-    .card:hover {
-      transform: scale(1.03);
-    }
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
 
-    a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
+/* SECTIONS */
+section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background: #38bdf8;
-      color: black;
-      border-radius: 5px;
-      font-weight: bold;
-    }
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #020617;
-      font-size: 14px;
-    }
-  </style>
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+    font-size: 14px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>Hi, I'm Divya 👋</h1>
-  <p>Aspiring Software Developer | BCA Student</p>
+    <h1>Hi, I'm Divya 👋</h1>
+    <p>Frontend Developer | Python Enthusiast | Building Real Projects 🚀</p>
 
-  <a class="btn" href="https://github.com/divyapratapsingh47" target="_blank" rel="noopener noreferrer">GitHub</a>
-  <a class="btn" href="https://www.linkedin.com/in/divyapratapsingh47/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <img src="https://via.placeholder.com/150" alt="Divya" class="profile-pic">
+
+    <br>
+
+    <a class="btn" href="https://github.com/divyapratapsingh47" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/divyapratapsingh47/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
 </header>
 
 <section>
-  <h2>About Me</h2>
-  <div class="card">
-    <p>I am a passionate BCA student interested in web development and AI. I enjoy building projects and learning new technologies.</p>
-  </div>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a passionate BCA student interested in Web Development and AI.
+            I enjoy building real-world projects and continuously learning new technologies.
+        </p>
+    </div>
 </section>
 
 <section>
-  <h2>Skills</h2>
-  <div class="card">
-    <p>Python, HTML, CSS, JavaScript, Git, GitHub, Machine Learning (basic)</p>
-  </div>
+    <h2>Skills</h2>
+    <div class="card">
+        <p>Python, HTML, CSS, JavaScript, Git, GitHub, Machine Learning (basic)</p>
+    </div>
 </section>
 
 <section>
-  <h2>Projects</h2>
+    <h2>Projects</h2>
 
-  <div class="card">
-    <h3>Portfolio Website</h3>
-    <p>Built using HTML, CSS and deployed using GitHub Pages.</p>
-    <a href="https://divyapratapsingh47.github.io/portfolio-website/">View Project</a>
-  </div>
+    <div class="card">
+        <h3>💻 Portfolio Website</h3>
+        <p>Designed and developed a responsive personal portfolio using HTML, CSS, and deployed via GitHub Pages.</p>
+        <a href="https://divyapratapsingh47.github.io/portfolio-website/" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
 
-  <div class="card">
-    <h3>Future Project</h3>
-    <p>Add your upcoming projects here.</p>
-  </div>
+    <div class="card">
+        <h3>🧠 Python Mini Projects</h3>
+        <p>Built small Python-based applications demonstrating problem-solving and logical thinking.</p>
+    </div>
 
 </section>
 
 <section>
-  <h2>Contact</h2>
-  <div class="card">
-    <p>📧 Email: <a href="mailto:Dps47mumbai@gmail.com">Dps47mumbai@gmail.com</a></p>
-    <p>🔗 <a href="https://www.linkedin.com/in/divyapratapsingh47/" target="_blank">LinkedIn Profile</a>
-  </div>
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: Dps47mumbai@gmail.com</p>
+        <a class="btn" href="mailto:Dps47mumbai@gmail.com">📩 Email Me</a>
+    </div>
 </section>
 
 <footer>
-  <p>© 2026 Divya Pratap Singh</p>
+    <p>© 2026 Divya Pratap Singh</p>
 </footer>
 
 </body>
